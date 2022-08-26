@@ -1,0 +1,7 @@
+player-err: "&cOnly a player can do that command."
+no-permission: "&cYou cant execute that command."
+location-saved: "&aSpawn saved!"
+spawn-teleport: "&aYou teleported to the spawn."
+player-null: "&cThe player does not exist."
+spawn-teleport-to: "&aYou have teleport &2%target% &ato the spawn"
+no-spawn: "&cThere is no spawn set."

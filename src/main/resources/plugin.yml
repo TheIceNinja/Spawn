@@ -1,0 +1,16 @@
+name: Spawn
+version: '${project.version}'
+main: net.theiceninja.spawn.Main
+api-version: 1.17
+authors: [ TheIceNinja ]
+description: spawn plugin
+website: github.com/theiceninja
+commands:
+  spawn:
+    description: teleports to the spawn
+    usage: /spawn <player>
+  setspawn:
+    description: sets the world spawn
+    usage: /setspawn
+    aliases:
+      - ss
