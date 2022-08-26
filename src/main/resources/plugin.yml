@@ -14,3 +14,9 @@ commands:
     usage: /setspawn
     aliases:
       - ss
+  reloadspawnconfig:
+    description: reloads the messages config.
+    usage: /rsc
+    aliases:
+      - rsc
+      - reloaspawn

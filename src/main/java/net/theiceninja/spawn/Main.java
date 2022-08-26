@@ -2,6 +2,7 @@ package net.theiceninja.spawn;
 
 import net.theiceninja.spawn.commands.SetSpawnCommand;
 import net.theiceninja.spawn.commands.SpawnCommand;
+import net.theiceninja.spawn.commands.SpawnReloadCommand;
 import net.theiceninja.spawn.listeners.SpawnListeners;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -23,6 +24,7 @@ public final class Main extends JavaPlugin {
         saveDefaultConfig();
         getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
+        getCommand("reloadspawnconfig").setExecutor(new SpawnReloadCommand(this));
         // listeners
         getServer().getPluginManager().registerEvents(new SpawnListeners(this), this);
 
