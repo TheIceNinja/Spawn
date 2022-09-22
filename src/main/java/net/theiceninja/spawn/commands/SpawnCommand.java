@@ -34,7 +34,7 @@ public class SpawnCommand implements CommandExecutor {
             }
             p.teleport(location);
             p.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("spawn-teleport")));
-        } else if (args.length == 1){
+        } else if (args.length == 1) {
             if (!p.hasPermission("spawn.spawn.other")) {
                 p.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("no-permission")));
                 return true;
