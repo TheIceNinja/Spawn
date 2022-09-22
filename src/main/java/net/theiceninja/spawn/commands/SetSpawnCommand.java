@@ -15,12 +15,12 @@ public class SetSpawnCommand implements CommandExecutor {
     }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)){
+        if (!(sender instanceof Player)) {
             sender.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("player-err")));
             return true;
         }
         Player p = (Player) sender;
-        if (!p.hasPermission("spawn.setspawn")){
+        if (!p.hasPermission("spawn.setspawn")) {
             p.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("no-permission")));
             return true;
         }

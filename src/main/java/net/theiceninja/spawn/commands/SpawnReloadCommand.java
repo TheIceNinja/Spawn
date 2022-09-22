@@ -16,7 +16,7 @@ public class SpawnReloadCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)){
+        if (!(sender instanceof Player)) {
             sender.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("player-err")));
             return true;
         }

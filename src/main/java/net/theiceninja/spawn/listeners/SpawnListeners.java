@@ -15,7 +15,7 @@ public class SpawnListeners implements Listener {
         this.plugin = plugin;
     }
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent e){
+    public void onPlayerJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
         Location location = plugin.getConfig().getLocation("spawn");
         if (location != null){
@@ -23,7 +23,7 @@ public class SpawnListeners implements Listener {
         }
     }
     @EventHandler
-    public void onRespawn(PlayerRespawnEvent e){
+    public void onRespawn(PlayerRespawnEvent e) {
         Player p = e.getPlayer();
         Location location = plugin.getConfig().getLocation("spawn");
         if (location != null){
