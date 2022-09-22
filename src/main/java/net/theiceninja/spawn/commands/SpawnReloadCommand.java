@@ -21,7 +21,7 @@ public class SpawnReloadCommand implements CommandExecutor {
             return true;
         }
         Player p = (Player) sender;
-        if (!p.hasPermission("spawn.reloadconfig")){
+        if (!p.hasPermission("spawn.reloadconfig")) {
             p.sendMessage(ColorUtils.color(plugin.getSpawnConfig().getString("no-permission")));
             return true;
         }
