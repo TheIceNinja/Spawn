@@ -1,6 +1,6 @@
 name: Spawn
 version: '${project.version}'
-main: net.theiceninja.spawn.Main
+main: net.theiceninja.spawn.SpawnPlugin
 api-version: 1.17
 authors: [ TheIceNinja ]
 description: spawn plugin

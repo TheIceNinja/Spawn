@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.io.IOException;
 
-public final class Main extends JavaPlugin {
+public final class SpawnPlugin extends JavaPlugin {
     private File spawnConfigFile;
     private FileConfiguration spawnConfig;
 
@@ -28,15 +28,15 @@ public final class Main extends JavaPlugin {
         // listeners
         getServer().getPluginManager().registerEvents(new SpawnListeners(this), this);
 
-
     }
 
     @Override
-    public void onDisable() {
-    }
+    public void onDisable() {}
+
     public FileConfiguration getSpawnConfig() {
         return this.spawnConfig;
     }
+
     public void reloadConfiguration() {
         spawnConfig = YamlConfiguration.loadConfiguration(spawnConfigFile);
     }
@@ -47,6 +47,7 @@ public final class Main extends JavaPlugin {
             spawnConfigFile.getParentFile().mkdirs();
             saveResource("messages.yml", false);
         }
+
         spawnConfig = new YamlConfiguration();
         try {
             spawnConfig.load(spawnConfigFile);
